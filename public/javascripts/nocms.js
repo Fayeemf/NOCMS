@@ -17,8 +17,12 @@ var nocms = angular.module('nocms', ['ngRoute'])
                 controller: "indexCtrl",
                 templateUrl: "/front/layout.html"
             })
-            .when("/:action", {
+            .when("/list", {
                 controller: "indexRouteCtrl",
+                templateUrl: "/front/layout.html"
+            })
+            .when("/item", {
+                controller: "indexCtrl",
                 templateUrl: "/front/layout.html"
             })
             .when("/admin", {
